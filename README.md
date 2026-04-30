@@ -1,17 +1,31 @@
-# saad
+# Flutter Notes App with Firebase (Assignment 3)
 
-A new Flutter project.
+A cross-platform mobile application for managing personal notes, built as part of the MD2 course. The app integrates **Firebase Authentication** for secure user management and **Cloud Firestore** for real-time data persistence.
 
-## Getting Started
+## 🚀 Key Features
 
-This project is a starting point for a Flutter application.
+### 1. Authentication (Auth)
+* **User Accounts**: Registration and Login functionality.
+* **Route Guarding**: Protected routes using `GoRouter`. Unauthenticated users are automatically redirected to the login page.
+* **Secure Logout**: Option to sign out and clear the session.
 
-A few resources to get you started if this is your first Flutter project:
+### 2. Notes Management (CRUD)
+* **Create**: Add new notes with a title and body via a pop-up dialog.
+* **Read**: View a real-time list of your notes synced from Firestore.
+* **Update**: Edit existing notes instantly.
+* **Delete**: Remove notes from the database with a single click.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 🛠 Tech Stack
+* **Framework**: Flutter
+* **State Management**: Riverpod
+* **Navigation**: GoRouter
+* **Backend**: Firebase Auth & Cloud Firestore
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📁 Project Structure
+The project follows a feature-first folder structure for better scalability:
+- `lib/features/auth/` – Authentication logic, providers, and UI screens.
+- `lib/features/notes/` – CRUD operations and the main notes list interface.
+- `lib/routing.dart` – Centralized routing configuration and navigation guards.
+
+## 👨‍💻 Author
+**Developed by:** [Alikhan]
